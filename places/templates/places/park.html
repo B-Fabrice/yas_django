@@ -6,3 +6,9 @@ Photos:
     <img src="{{ photo.image.url }}" alt="{{ photo.name }}">
 </p>
 {% endfor %}
+
+{% for review in park.reviews.all %}
+<p>
+    {{ review.rating }}: {{ review.comment }}
+</p>
+{% endfor %}

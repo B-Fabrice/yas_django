@@ -1,0 +1,8 @@
+<h1>Country: {{ country.name }}</h1>
+
+<h2>Top Parks</h2>
+<br>
+{% for park in parks %}
+<h2>Park: {{ park.name }} - {{ park.reviews.count }}</h2>
+<br>
+{% endfor %}
